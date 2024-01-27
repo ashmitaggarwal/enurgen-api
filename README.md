@@ -92,6 +92,7 @@ curl --location 'http://localhost:3000/extract-rect-coords' \
 --form '=@"/public/images/simple.png"'
 
 ```
+<img width="870" alt="Screenshot 2024-01-27 at 5 50 46 AM" src="https://github.com/ashmitaggarwal/enurgen-api/assets/26399866/8af26aea-d93b-4c6a-8f01-ab945e20d864">
 
 Resppnse
 
