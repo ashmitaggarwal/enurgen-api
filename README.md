@@ -86,6 +86,77 @@ Create a Dockerfile in the same directory as app.js:
 
 - **POST /extract-rect-coords:** Accepts PNG files, processes them, and returns a JSON array of rectangles.
 
+```bash
+
+curl --location 'http://localhost:3000/extract-rect-coords' \
+--form '=@"/public/images/simple.png"'
+
+```
+
+Resppnse
+
+```bash
+
+{
+    "rectangles": [
+        {
+            "id": "5d5754fe-4998-4636-af0e-124f14fe3426",
+            "coordinates": [
+                75,
+                56,
+                124,
+                455,
+                124,
+                455,
+                75,
+                455
+            ]
+        },
+        {
+            "id": "2813d1cb-a72d-4d85-bc1b-0f929090d299",
+            "coordinates": [
+                231,
+                56,
+                280,
+                455,
+                280,
+                455,
+                231,
+                455
+            ]
+        },
+        {
+            "id": "94f34431-7011-4438-bf26-825afe76c165",
+            "coordinates": [
+                387,
+                56,
+                436,
+                455,
+                436,
+                455,
+                387,
+                455
+            ]
+        },
+        {
+            "id": "9db17bc3-ae20-4bba-98c0-0d2fd4a47187",
+            "coordinates": [
+                75,
+                57,
+                124,
+                455,
+                124,
+                455,
+                75,
+                455
+            ]
+        }
+    ],
+    "status": 200
+}
+
+```
+
 ### File Structure
 
 - **app.js:** Main entry point for the microservice.
